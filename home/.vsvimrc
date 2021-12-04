@@ -1,0 +1,16 @@
+" Commands are found in the Command Window (Ctrl+Alt+A)
+
+let mapleader = " "
+set clipboard=unnamed
+set scrolloff=8
+set incsearch
+set number
+set relativenumber
+
+map <leader>ff :vsc Edit.GoToFile<CR>
+map <leader>fb :vsc Edit.GoToRecentFile<CR>
+map <leader>fs :vsc Edit.GoToSymbol<CR>
+
+nmap <C-]> :vsc Edit.GoToDefinition<CR>
+nmap <C-o> :vsc View.NavigateBackward<CR>
+nmap <C-i> :vsc View.NavigateForward<CR>
