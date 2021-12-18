@@ -1,0 +1,16 @@
+" Actions list: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
+
+let mapleader = " "
+set clipboard+=unnamed
+set scrolloff=8
+set number relativenumber
+set hlsearch incsearch ignorecase smartcase
+
+map <leader>ff :action GotoFile<CR>
+map <leader>fb :action RecentFiles<CR>
+map <leader>fg :action FindInPath<CR>
+map <leader>fs :action GotoSymbol<CR>
+
+nmap <C-]> :action GotoDeclaration<CR>
+nmap <C-o> :action Back<CR>
+nmap <C-i> :action Forward<CR>
