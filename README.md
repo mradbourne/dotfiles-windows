@@ -4,6 +4,22 @@ These are based on [Jay Harris's dotfiles for Windows](https://github.com/jayhar
 
 ## Installation
 
+### Install prerequisites
+
+#### Chocolatey
+
+Install Chocolatey using the [official instructions](https://chocolatey.org/install).
+
+#### Neovim
+
+```posh
+choco install neovim --pre
+```
+
+The `--pre` flag installs v0.6, which is required for Lua plugins.
+
+### Install dotfiles
+
 You can clone the repository wherever you want. (e.g. `~\dotfiles-windows`) The bootstrapper script will pull in the latest version and copy the files to your home folder.
 
 To update, `cd` into your local `dotfiles-windows` repository within PowerShell and then:
