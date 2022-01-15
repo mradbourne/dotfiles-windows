@@ -119,6 +119,10 @@
 	precomposeunicode = true
 	# quotepath false
 
+	# Auto-convert CRLF line endings into LF when adding a file to git and
+	# auto-convert LF to CRLF when checking out files to your filesystem.
+	autocrlf = true
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
