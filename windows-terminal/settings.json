@@ -36,6 +36,7 @@
                 "window",
                 "taskbar"
             ],
+            "colorScheme": "Solarized Light",
             "cursorShape": "filledBox",
             "font": {
                 "face": "JetBrains Mono NL",
