@@ -16,6 +16,10 @@ Install Chocolatey using the [official instructions](https://chocolatey.org/inst
 choco install neovim
 ```
 
+#### posh-git (optional)
+
+These dotfiles are set up to import posh-git if it is available. Install posh-git using the [official instructions](https://github.com/dahlbyk/posh-git#installation)
+
 ### Install dotfiles
 
 You can clone the repository wherever you want. (e.g. `~\dotfiles-windows`) The bootstrapper script will pull in the latest version and copy the files to your home folder.
@@ -30,7 +34,7 @@ Note: You must have your execution policy set to unrestricted (or at least in by
 
 ### Add custom commands without creating a new fork
 
-If `.\extra.ps1` exists, it will be sourced along with the other files. You can use this to add a few custom commands without the need to fork this entire repository, or to add commands you don’t want to commit to a public repository.
+If `.\extra.ps1` exists, it will be sourced along with the other files. You can use this to add a few custom commands without the need to fork this entire repository, or to add commands you don’t want to commit to a public repository. Remember that this file must go in the PowerShell profile directory, not the home directory as you might expect.
 
 My `.\extra.ps1` looks something like this:
 
