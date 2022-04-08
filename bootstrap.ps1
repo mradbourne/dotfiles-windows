@@ -3,7 +3,7 @@ $windowsTerminalDir = Join-Path $home "AppData\Local\Packages\Microsoft.WindowsT
 
 New-Item $profileDir -ItemType Directory -Force -ErrorAction SilentlyContinue
 
-Copy-Item -Path ".\profile\**" -Destination $profileDir -Include ** -Force
+Copy-Item -Path ".\profile\**" -Destination $profileDir -Include ** -Force -Recurse
 Copy-Item -Path ".\home\**" -Destination $home -Include **
 Copy-Item -Path ".\windows-terminal\settings.json" -Destination $windowsTerminalDir
 
