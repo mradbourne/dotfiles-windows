@@ -4,5 +4,6 @@ Push-Location (Join-Path (Split-Path -parent $profile) "components")
 
 # From within the ./components directory...
 . .\git.ps1
+. .\powershell-colors.ps1
 
 Pop-Location

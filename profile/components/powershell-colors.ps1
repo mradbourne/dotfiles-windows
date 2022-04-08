@@ -1,0 +1,16 @@
+Set-PSReadlineOption -Colors @{
+    Command            = "$([char]0x1b)[37m"
+    Comment            = "$([char]0x1b)[32m"
+    ContinuationPrompt = "$([char]0x1b)[37m"
+    Emphasis           = "$([char]0x1b)[96m"
+    Error              = "$([char]0x1b)[91m"
+    Keyword            = "$([char]0x1b)[37m"
+    Member             = "$([char]0x1b)[97m"
+    Number             = "$([char]0x1b)[97m"
+    Operator           = "$([char]0x1b)[37m"
+    Parameter          = "$([char]0x1b)[37m"
+    Selection          = "$([char]0x1b)[30;47m"
+    String             = "$([char]0x1b)[36m"
+    Type               = "$([char]0x1b)[37m"
+    Variable           = "$([char]0x1b)[37m"
+}
