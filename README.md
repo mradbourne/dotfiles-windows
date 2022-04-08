@@ -13,10 +13,8 @@ Install Chocolatey using the [official instructions](https://chocolatey.org/inst
 #### Neovim
 
 ```posh
-choco install neovim --pre
+choco install neovim
 ```
-
-The `--pre` flag installs v0.6, which is required for Lua plugins.
 
 ### Install dotfiles
 
@@ -46,12 +44,6 @@ Set-Environment "GIT_COMMITTER_NAME" $env:GIT_AUTHOR_NAME
 Set-Environment "GIT_COMMITTER_EMAIL" $env:GIT_AUTHOR_EMAIL
 git config --global user.name $env:GIT_AUTHOR_NAME
 git config --global user.email $env:GIT_AUTHOR_EMAIL
-```
-
-### Install dependencies and packages
-
-```posh
-.\deps.ps1
 ```
 
 This config is based on [Jay Harris' dotfiles repo](https://github.com/jayharris/dotfiles-windows), which is under the MIT licence:
