@@ -36,7 +36,7 @@
                 "window",
                 "taskbar"
             ],
-            "colorScheme": "Base 16 Default Dark",
+            "colorScheme": "Campbell",
             "cursorShape": "filledBox",
             "font": {
                 "face": "JetBrains Mono NL",
@@ -271,27 +271,6 @@
             "selectionBackground": "#FFFFFF",
             "white": "#C0C0C0",
             "yellow": "#808000"
-        },
-        {
-            "name": "Base 16 Default Dark",
-            "background": "#181818",
-            "foreground": "#d8d8d8",
-            "black": "#181818",
-            "red": "#ab4642",
-            "green": "#a1b56c",
-            "yellow": "#f7ca88",
-            "blue": "#7cafc2",
-            "purple": "#ba8baf",
-            "cyan": "#86c1b9",
-            "white": "#d8d8d8",
-            "brightBlack": "#585858",
-            "brightRed": "#dc9656",
-            "brightGreen": "#282828",
-            "brightYellow": "#383838",
-            "brightBlue": "#b8b8b8",
-            "brightPurple": "#e8e8e8",
-            "brightCyan": "#a16946",
-            "brightWhite": "#f8f8f8"
         }
     ],
     "showTabsInTitlebar": true
