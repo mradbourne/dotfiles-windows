@@ -1,14 +1,37 @@
+" Actions list: https://gist.github.com/zchee/9c78f91cc5ad771c1f5d
+
+" Options
 let mapleader = " "
 set clipboard+=unnamed
 set scrolloff=8
-set number relativenumber
-set hlsearch incsearch ignorecase smartcase
+set number
+set hlsearch incsearch
 
-map <leader>ff <Action>(GotoFile)
-map <leader>fb <Action>(RecentFiles)
-map <leader>fg <Action>(FindInPath)
-map <leader>fs <Action>(GotoSymbol)
+" Emulated plugins
+" https://github.com/JetBrains/ideavim/wiki/Emulated-plugins
+Plug 'tpope/vim-surround'
+Plug 'machakann/vim-highlightedyank'
+Plug 'dbakker/vim-paragraph-motion'
 
-nmap <C-]> <Action>(GotoDeclaration)
-nmap <C-o> <Action>(Back)
-nmap <C-i> <Action>(Forward)
+" Telescope keymaps
+map <leader>ff :action GotoFile<CR>
+map <leader>fb :action RecentFiles<CR>
+map <leader>fg :action FindInPath<CR>
+map <leader>fs :action GotoSymbol<CR>
+
+" LSP keymaps
+nmap gd :action GotoDeclaration<CR>
+nmap gs :action FindUsagesInFile<CR>
+nmap gS :action GotoSymbol<CR>
+nmap gr :action ShowUsages<CR>
+nmap gi :action GotoImplementation<CR>
+nmap gt :action GotoTypeDeclaration<CR>
+nmap <leader>rn :action RenameElement<CR>
+nmap [g :action GotoPreviousError<CR>
+nmap ]g :action GotoNextError<CR>
+nmap K :action ShowErrorDescription<CR>
+
+" Basic vim keymaps
+nmap <C-]> :action GotoDeclaration<CR>
+nmap <C-o> :action Back<CR>
+nmap <C-i> :action Forward<CR>
